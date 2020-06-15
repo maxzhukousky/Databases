@@ -1,0 +1,9 @@
+{% extends 'admin/base.html' %}
+
+{% block content %}
+<form action="" method="POST">
+{% csrf_token %}
+    <input type="text" name="message">
+    <input type="submit" value="Send" class="btn">
+</form>
+{% endblock %}

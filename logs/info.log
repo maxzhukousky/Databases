@@ -1,0 +1,305 @@
+INFO autoreload 60171 Watching for file changes with StatReloader
+INFO autoreload 60171 /Users/aleksandramialiashka/Documents/Programming/MaximProject/accounts/views.py changed, reloading.
+INFO autoreload 60176 Watching for file changes with StatReloader
+INFO autoreload 60176 /Users/aleksandramialiashka/Documents/Programming/MaximProject/accounts/views.py changed, reloading.
+INFO autoreload 60180 Watching for file changes with StatReloader
+INFO autoreload 60180 /Users/aleksandramialiashka/Documents/Programming/MaximProject/accounts/views.py changed, reloading.
+INFO autoreload 60186 Watching for file changes with StatReloader
+WARNING views 60186 invalid username/password
+INFO basehttp 60186 "POST /accounts/login/ HTTP/1.1" 302 0
+INFO basehttp 60186 "GET /accounts/login/ HTTP/1.1" 200 1546
+WARNING views 60186 invalid username/password
+INFO basehttp 60186 "POST /accounts/login/ HTTP/1.1" 302 0
+INFO basehttp 60186 "GET /accounts/login/ HTTP/1.1" 200 1546
+INFO views 60186 alex logged in
+INFO basehttp 60186 "POST /accounts/login/ HTTP/1.1" 302 0
+INFO basehttp 60186 "GET / HTTP/1.1" 200 29633
+INFO autoreload 60186 /Users/aleksandramialiashka/Documents/Programming/MaximProject/accounts/models.py changed, reloading.
+INFO autoreload 60417 Watching for file changes with StatReloader
+INFO autoreload 60417 /Users/aleksandramialiashka/Documents/Programming/MaximProject/accounts/models.py changed, reloading.
+INFO autoreload 60422 Watching for file changes with StatReloader
+INFO autoreload 60422 /Users/aleksandramialiashka/Documents/Programming/MaximProject/accounts/models.py changed, reloading.
+INFO autoreload 60445 Watching for file changes with StatReloader
+INFO autoreload 60445 /Users/aleksandramialiashka/Documents/Programming/MaximProject/accounts/models.py changed, reloading.
+INFO autoreload 60585 Watching for file changes with StatReloader
+INFO autoreload 60585 /Users/aleksandramialiashka/Documents/Programming/MaximProject/Warehouse/settings.py changed, reloading.
+INFO 2020-06-15 14:50:55,198 autoreload 60824 Watching for file changes with StatReloader
+INFO 2020-06-15 14:51:17,946 basehttp 60824 "GET /admin/ HTTP/1.1" 200 9260
+INFO 2020-06-15 14:51:18,058 basehttp 60824 "GET /admin/ HTTP/1.1" 200 9260
+INFO 2020-06-15 14:51:41,260 autoreload 60824 /Users/aleksandramialiashka/Documents/Programming/MaximProject/accounts/admin.py changed, reloading.
+INFO 2020-06-15 14:51:41,906 autoreload 60857 Watching for file changes with StatReloader
+INFO 2020-06-15 14:51:42,489 basehttp 60857 "GET /admin/ HTTP/1.1" 200 9703
+INFO 2020-06-15 14:51:44,333 basehttp 60857 "GET /admin/accounts/profile/ HTTP/1.1" 200 3183
+INFO 2020-06-15 14:51:44,426 basehttp 60857 "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 280364
+INFO 2020-06-15 14:51:44,449 basehttp 60857 "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+INFO 2020-06-15 14:51:46,242 basehttp 60857 "GET /admin/accounts/profile/add/ HTTP/1.1" 200 5108
+INFO 2020-06-15 14:51:46,310 basehttp 60857 "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+ERROR 2020-06-15 14:51:56,247 log 60857 Internal Server Error: /admin/accounts/profile/add/
+Traceback (most recent call last):
+  File "/Users/aleksandramialiashka/Documents/Programming/MaximProject/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/aleksandramialiashka/Documents/Programming/MaximProject/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/aleksandramialiashka/Documents/Programming/MaximProject/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/aleksandramialiashka/Documents/Programming/MaximProject/venv/lib/python3.7/site-packages/django/contrib/admin/options.py", line 607, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/Users/aleksandramialiashka/Documents/Programming/MaximProject/venv/lib/python3.7/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/aleksandramialiashka/Documents/Programming/MaximProject/venv/lib/python3.7/site-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Users/aleksandramialiashka/Documents/Programming/MaximProject/venv/lib/python3.7/site-packages/django/contrib/admin/sites.py", line 231, in inner
+    return view(request, *args, **kwargs)
+  File "/Users/aleksandramialiashka/Documents/Programming/MaximProject/venv/lib/python3.7/site-packages/django/contrib/admin/options.py", line 1638, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "/Users/aleksandramialiashka/Documents/Programming/MaximProject/venv/lib/python3.7/site-packages/django/utils/decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/Users/aleksandramialiashka/Documents/Programming/MaximProject/venv/lib/python3.7/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/aleksandramialiashka/Documents/Programming/MaximProject/venv/lib/python3.7/site-packages/django/contrib/admin/options.py", line 1522, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/Users/aleksandramialiashka/Documents/Programming/MaximProject/venv/lib/python3.7/site-packages/django/contrib/admin/options.py", line 1569, in _changeform_view
+    self.log_addition(request, new_object, change_message)
+  File "/Users/aleksandramialiashka/Documents/Programming/MaximProject/venv/lib/python3.7/site-packages/django/contrib/admin/options.py", line 807, in log_addition
+    object_repr=str(object),
+TypeError: __str__ returned non-string (type User)
+ERROR 2020-06-15 14:51:56,249 basehttp 60857 "POST /admin/accounts/profile/add/ HTTP/1.1" 500 112757
+INFO 2020-06-15 14:53:02,737 basehttp 60857 "GET /admin/accounts/profile/add/ HTTP/1.1" 200 5108
+ERROR 2020-06-15 14:53:06,053 log 60857 Internal Server Error: /admin/accounts/profile/add/
+Traceback (most recent call last):
+  File "/Users/aleksandramialiashka/Documents/Programming/MaximProject/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/aleksandramialiashka/Documents/Programming/MaximProject/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/aleksandramialiashka/Documents/Programming/MaximProject/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/aleksandramialiashka/Documents/Programming/MaximProject/venv/lib/python3.7/site-packages/django/contrib/admin/options.py", line 607, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/Users/aleksandramialiashka/Documents/Programming/MaximProject/venv/lib/python3.7/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/aleksandramialiashka/Documents/Programming/MaximProject/venv/lib/python3.7/site-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Users/aleksandramialiashka/Documents/Programming/MaximProject/venv/lib/python3.7/site-packages/django/contrib/admin/sites.py", line 231, in inner
+    return view(request, *args, **kwargs)
+  File "/Users/aleksandramialiashka/Documents/Programming/MaximProject/venv/lib/python3.7/site-packages/django/contrib/admin/options.py", line 1638, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "/Users/aleksandramialiashka/Documents/Programming/MaximProject/venv/lib/python3.7/site-packages/django/utils/decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/Users/aleksandramialiashka/Documents/Programming/MaximProject/venv/lib/python3.7/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/aleksandramialiashka/Documents/Programming/MaximProject/venv/lib/python3.7/site-packages/django/contrib/admin/options.py", line 1522, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/Users/aleksandramialiashka/Documents/Programming/MaximProject/venv/lib/python3.7/site-packages/django/contrib/admin/options.py", line 1569, in _changeform_view
+    self.log_addition(request, new_object, change_message)
+  File "/Users/aleksandramialiashka/Documents/Programming/MaximProject/venv/lib/python3.7/site-packages/django/contrib/admin/options.py", line 807, in log_addition
+    object_repr=str(object),
+TypeError: __str__ returned non-string (type User)
+ERROR 2020-06-15 14:53:06,054 basehttp 60857 "POST /admin/accounts/profile/add/ HTTP/1.1" 500 112757
+INFO 2020-06-15 14:53:10,391 basehttp 60857 "GET /admin/accounts/profile/add/ HTTP/1.1" 200 5108
+INFO 2020-06-15 14:53:16,002 basehttp 60857 "GET / HTTP/1.1" 200 29633
+INFO 2020-06-15 14:53:19,695 basehttp 60857 "GET /admin/ HTTP/1.1" 200 9703
+INFO 2020-06-15 14:53:19,875 basehttp 60857 "GET /admin/ HTTP/1.1" 200 9703
+INFO 2020-06-15 14:53:41,708 basehttp 60857 "GET /admin/ HTTP/1.1" 200 9975
+INFO 2020-06-15 14:53:45,229 basehttp 60857 "GET /admin/accounts/profile/ HTTP/1.1" 200 3183
+INFO 2020-06-15 14:53:45,306 basehttp 60857 "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+INFO 2020-06-15 14:53:47,828 basehttp 60857 "GET /admin/accounts/profile/add/ HTTP/1.1" 200 5108
+INFO 2020-06-15 14:53:47,905 basehttp 60857 "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+ERROR 2020-06-15 14:53:55,611 log 60857 Internal Server Error: /admin/accounts/profile/add/
+Traceback (most recent call last):
+  File "/Users/aleksandramialiashka/Documents/Programming/MaximProject/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/aleksandramialiashka/Documents/Programming/MaximProject/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/aleksandramialiashka/Documents/Programming/MaximProject/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/aleksandramialiashka/Documents/Programming/MaximProject/venv/lib/python3.7/site-packages/django/contrib/admin/options.py", line 607, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/Users/aleksandramialiashka/Documents/Programming/MaximProject/venv/lib/python3.7/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/aleksandramialiashka/Documents/Programming/MaximProject/venv/lib/python3.7/site-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Users/aleksandramialiashka/Documents/Programming/MaximProject/venv/lib/python3.7/site-packages/django/contrib/admin/sites.py", line 231, in inner
+    return view(request, *args, **kwargs)
+  File "/Users/aleksandramialiashka/Documents/Programming/MaximProject/venv/lib/python3.7/site-packages/django/contrib/admin/options.py", line 1638, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "/Users/aleksandramialiashka/Documents/Programming/MaximProject/venv/lib/python3.7/site-packages/django/utils/decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/Users/aleksandramialiashka/Documents/Programming/MaximProject/venv/lib/python3.7/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/aleksandramialiashka/Documents/Programming/MaximProject/venv/lib/python3.7/site-packages/django/contrib/admin/options.py", line 1522, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/Users/aleksandramialiashka/Documents/Programming/MaximProject/venv/lib/python3.7/site-packages/django/contrib/admin/options.py", line 1569, in _changeform_view
+    self.log_addition(request, new_object, change_message)
+  File "/Users/aleksandramialiashka/Documents/Programming/MaximProject/venv/lib/python3.7/site-packages/django/contrib/admin/options.py", line 807, in log_addition
+    object_repr=str(object),
+TypeError: __str__ returned non-string (type User)
+ERROR 2020-06-15 14:53:55,612 basehttp 60857 "POST /admin/accounts/profile/add/ HTTP/1.1" 500 112757
+INFO 2020-06-15 14:59:20,330 autoreload 60857 /Users/aleksandramialiashka/Documents/Programming/MaximProject/accounts/models.py changed, reloading.
+INFO 2020-06-15 14:59:20,977 autoreload 61013 Watching for file changes with StatReloader
+INFO 2020-06-15 14:59:22,444 autoreload 61013 /Users/aleksandramialiashka/Documents/Programming/MaximProject/accounts/models.py changed, reloading.
+INFO 2020-06-15 14:59:23,100 autoreload 61016 Watching for file changes with StatReloader
+INFO 2020-06-15 14:59:42,760 autoreload 61016 /Users/aleksandramialiashka/Documents/Programming/MaximProject/accounts/models.py changed, reloading.
+INFO 2020-06-15 14:59:43,390 autoreload 61029 Watching for file changes with StatReloader
+INFO 2020-06-15 15:00:00,378 basehttp 61029 "GET /admin/accounts/profile/add/ HTTP/1.1" 200 5240
+INFO 2020-06-15 15:00:01,819 basehttp 61029 "GET /admin/accounts/profile/ HTTP/1.1" 200 3183
+INFO 2020-06-15 15:00:04,311 basehttp 61029 "GET /admin/accounts/profile/add/ HTTP/1.1" 200 5240
+INFO 2020-06-15 15:00:04,376 basehttp 61029 "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+ERROR 2020-06-15 15:00:19,073 log 61029 Internal Server Error: /admin/accounts/profile/add/
+Traceback (most recent call last):
+  File "/Users/aleksandramialiashka/Documents/Programming/MaximProject/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/aleksandramialiashka/Documents/Programming/MaximProject/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/aleksandramialiashka/Documents/Programming/MaximProject/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/aleksandramialiashka/Documents/Programming/MaximProject/venv/lib/python3.7/site-packages/django/contrib/admin/options.py", line 607, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/Users/aleksandramialiashka/Documents/Programming/MaximProject/venv/lib/python3.7/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/aleksandramialiashka/Documents/Programming/MaximProject/venv/lib/python3.7/site-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Users/aleksandramialiashka/Documents/Programming/MaximProject/venv/lib/python3.7/site-packages/django/contrib/admin/sites.py", line 231, in inner
+    return view(request, *args, **kwargs)
+  File "/Users/aleksandramialiashka/Documents/Programming/MaximProject/venv/lib/python3.7/site-packages/django/contrib/admin/options.py", line 1638, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "/Users/aleksandramialiashka/Documents/Programming/MaximProject/venv/lib/python3.7/site-packages/django/utils/decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/Users/aleksandramialiashka/Documents/Programming/MaximProject/venv/lib/python3.7/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/aleksandramialiashka/Documents/Programming/MaximProject/venv/lib/python3.7/site-packages/django/contrib/admin/options.py", line 1522, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/Users/aleksandramialiashka/Documents/Programming/MaximProject/venv/lib/python3.7/site-packages/django/contrib/admin/options.py", line 1569, in _changeform_view
+    self.log_addition(request, new_object, change_message)
+  File "/Users/aleksandramialiashka/Documents/Programming/MaximProject/venv/lib/python3.7/site-packages/django/contrib/admin/options.py", line 807, in log_addition
+    object_repr=str(object),
+TypeError: __str__ returned non-string (type User)
+ERROR 2020-06-15 15:00:19,077 basehttp 61029 "POST /admin/accounts/profile/add/ HTTP/1.1" 500 112759
+INFO 2020-06-15 15:01:05,187 autoreload 61029 /Users/aleksandramialiashka/Documents/Programming/MaximProject/accounts/models.py changed, reloading.
+INFO 2020-06-15 15:01:05,799 autoreload 61085 Watching for file changes with StatReloader
+INFO 2020-06-15 15:01:08,409 basehttp 61085 "GET /admin/accounts/profile/add/ HTTP/1.1" 200 5240
+INFO 2020-06-15 15:01:11,370 basehttp 61085 "POST /admin/accounts/profile/add/ HTTP/1.1" 302 0
+INFO 2020-06-15 15:01:11,434 basehttp 61085 "GET /admin/accounts/profile/ HTTP/1.1" 200 4561
+INFO 2020-06-15 15:01:11,489 basehttp 61085 "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+INFO 2020-06-15 15:01:43,788 autoreload 61085 /Users/aleksandramialiashka/Documents/Programming/MaximProject/accounts/models.py changed, reloading.
+INFO 2020-06-15 15:01:44,510 autoreload 61101 Watching for file changes with StatReloader
+INFO 2020-06-15 15:01:45,153 basehttp 61101 "GET /admin/accounts/profile/ HTTP/1.1" 200 4347
+INFO 2020-06-15 15:01:45,226 basehttp 61101 "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+INFO 2020-06-15 15:01:48,169 basehttp 61101 "GET /admin/accounts/profile/5/change/ HTTP/1.1" 200 5453
+INFO 2020-06-15 15:01:48,238 basehttp 61101 "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+INFO 2020-06-15 15:01:50,804 basehttp 61101 "POST /admin/accounts/profile/5/change/ HTTP/1.1" 302 0
+INFO 2020-06-15 15:01:50,879 basehttp 61101 "GET /admin/accounts/profile/ HTTP/1.1" 200 4535
+INFO 2020-06-15 15:01:50,943 basehttp 61101 "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+INFO 2020-06-15 15:02:28,406 basehttp 61101 "GET /admin/ HTTP/1.1" 200 9746
+INFO 2020-06-15 15:02:51,859 basehttp 61101 "GET /admin/ HTTP/1.1" 200 9697
+INFO 2020-06-15 15:03:00,073 basehttp 61101 "GET /admin/ HTTP/1.1" 200 9697
+INFO 2020-06-15 15:03:01,861 basehttp 61101 "GET /admin/ HTTP/1.1" 200 9697
+INFO 2020-06-15 15:03:08,755 basehttp 61101 "GET /admin/ HTTP/1.1" 200 9697
+INFO 2020-06-15 15:03:10,402 basehttp 61101 "GET /admin/ HTTP/1.1" 200 9697
+INFO 2020-06-15 15:03:43,788 basehttp 61101 "GET /admin/ HTTP/1.1" 200 10021
+INFO 2020-06-15 15:03:56,644 basehttp 61101 "GET /admin/ HTTP/1.1" 200 9697
+INFO 2020-06-15 15:04:06,772 basehttp 61101 "GET /admin/ HTTP/1.1" 200 10021
+INFO 2020-06-15 15:26:37,211 autoreload 61101 /Users/aleksandramialiashka/Documents/Programming/MaximProject/accounts/models.py changed, reloading.
+INFO 2020-06-15 15:26:38,588 autoreload 61491 Watching for file changes with StatReloader
+INFO 2020-06-15 15:56:47,108 basehttp 61491 "GET / HTTP/1.1" 200 29633
+INFO 2020-06-15 15:57:07,087 basehttp 61491 "POST /accounts/logout/ HTTP/1.1" 200 19878
+INFO 2020-06-15 15:58:38,321 basehttp 61491 "POST /accounts/logout/ HTTP/1.1" 200 19878
+INFO 2020-06-15 15:58:47,301 basehttp 61491 "GET /accounts/login/ HTTP/1.1" 200 1258
+INFO 2020-06-15 15:58:52,124 views 61491 alex logged in
+INFO 2020-06-15 15:58:52,128 basehttp 61491 "POST /accounts/login/ HTTP/1.1" 302 0
+INFO 2020-06-15 15:58:52,164 basehttp 61491 "GET / HTTP/1.1" 200 29633
+WARNING 2020-06-15 15:59:07,743 basehttp 61491 "GET /static/js/aos.js.map HTTP/1.1" 404 1665
+WARNING 2020-06-15 15:59:07,744 basehttp 61491 "GET /static/js/popper.min.js.map HTTP/1.1" 404 1686
+WARNING 2020-06-15 15:59:07,744 basehttp 61491 "GET /static/js/bootstrap.min.js.map HTTP/1.1" 404 1695
+INFO 2020-06-15 15:59:07,782 basehttp 61491 "GET /static/css/bootstrap.min.css.map HTTP/1.1" 200 79222
+WARNING 2020-06-15 15:59:07,792 basehttp 61491 "GET /static/css/aos.css.map HTTP/1.1" 404 1671
+WARNING 2020-06-15 15:59:07,793 basehttp 61491 "GET /static/css/bootstrap-datepicker.css.map HTTP/1.1" 404 1722
+INFO 2020-06-15 16:00:56,432 basehttp 61491 "GET / HTTP/1.1" 200 29633
+INFO 2020-06-15 16:02:25,159 basehttp 61491 "GET / HTTP/1.1" 200 29649
+INFO 2020-06-15 16:02:53,761 autoreload 61491 /Users/aleksandramialiashka/Documents/Programming/MaximProject/accounts/views.py changed, reloading.
+INFO 2020-06-15 16:02:55,013 autoreload 62140 Watching for file changes with StatReloader
+INFO 2020-06-15 16:03:04,348 autoreload 62140 /Users/aleksandramialiashka/Documents/Programming/MaximProject/accounts/views.py changed, reloading.
+INFO 2020-06-15 16:03:04,908 autoreload 62146 Watching for file changes with StatReloader
+INFO 2020-06-15 16:03:15,488 autoreload 62146 /Users/aleksandramialiashka/Documents/Programming/MaximProject/accounts/views.py changed, reloading.
+INFO 2020-06-15 16:03:16,019 autoreload 62153 Watching for file changes with StatReloader
+INFO 2020-06-15 16:03:21,390 basehttp 62153 "POST /accounts/logout/ HTTP/1.1" 200 19894
+ERROR 2020-06-15 16:03:36,411 log 62153 Internal Server Error: /accounts/contacting
+Traceback (most recent call last):
+  File "/Users/aleksandramialiashka/Documents/Programming/MaximProject/venv/lib/python3.7/site-packages/django/utils/datastructures.py", line 76, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'message_contact'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/aleksandramialiashka/Documents/Programming/MaximProject/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/aleksandramialiashka/Documents/Programming/MaximProject/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/aleksandramialiashka/Documents/Programming/MaximProject/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/aleksandramialiashka/Documents/Programming/MaximProject/accounts/views.py", line 84, in contacting
+    message = request.POST['message_contact']
+  File "/Users/aleksandramialiashka/Documents/Programming/MaximProject/venv/lib/python3.7/site-packages/django/utils/datastructures.py", line 78, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'message_contact'
+ERROR 2020-06-15 16:03:36,413 basehttp 62153 "POST /accounts/contacting HTTP/1.1" 500 76722
+INFO 2020-06-15 16:04:15,319 autoreload 62153 /Users/aleksandramialiashka/Documents/Programming/MaximProject/accounts/views.py changed, reloading.
+INFO 2020-06-15 16:04:15,779 autoreload 62170 Watching for file changes with StatReloader
+INFO 2020-06-15 16:04:24,722 basehttp 62170 "GET / HTTP/1.1" 200 29297
+ERROR 2020-06-15 16:04:35,040 log 62170 Internal Server Error: /accounts/contacting
+Traceback (most recent call last):
+  File "/Users/aleksandramialiashka/Documents/Programming/MaximProject/venv/lib/python3.7/site-packages/django/utils/datastructures.py", line 76, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'message_contact'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/aleksandramialiashka/Documents/Programming/MaximProject/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/aleksandramialiashka/Documents/Programming/MaximProject/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/aleksandramialiashka/Documents/Programming/MaximProject/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/aleksandramialiashka/Documents/Programming/MaximProject/accounts/views.py", line 84, in contacting
+    message_contact = request.POST['message_contact']
+  File "/Users/aleksandramialiashka/Documents/Programming/MaximProject/venv/lib/python3.7/site-packages/django/utils/datastructures.py", line 78, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'message_contact'
+ERROR 2020-06-15 16:04:35,042 basehttp 62170 "POST /accounts/contacting HTTP/1.1" 500 76719
+INFO 2020-06-15 16:06:41,098 basehttp 62170 "GET / HTTP/1.1" 200 29297
+ERROR 2020-06-15 16:10:52,836 log 62170 Internal Server Error: /accounts/contacting
+Traceback (most recent call last):
+  File "/Users/aleksandramialiashka/Documents/Programming/MaximProject/venv/lib/python3.7/site-packages/django/utils/datastructures.py", line 76, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'message_contact'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/aleksandramialiashka/Documents/Programming/MaximProject/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/aleksandramialiashka/Documents/Programming/MaximProject/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/aleksandramialiashka/Documents/Programming/MaximProject/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/aleksandramialiashka/Documents/Programming/MaximProject/accounts/views.py", line 84, in contacting
+    message_contact = request.POST['message_contact']
+  File "/Users/aleksandramialiashka/Documents/Programming/MaximProject/venv/lib/python3.7/site-packages/django/utils/datastructures.py", line 78, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'message_contact'
+ERROR 2020-06-15 16:10:52,837 basehttp 62170 "POST /accounts/contacting HTTP/1.1" 500 76694
+INFO 2020-06-15 16:11:38,712 autoreload 62170 /Users/aleksandramialiashka/Documents/Programming/MaximProject/accounts/views.py changed, reloading.
+INFO 2020-06-15 16:11:39,175 autoreload 62299 Watching for file changes with StatReloader
+INFO 2020-06-15 16:12:07,107 basehttp 62299 "GET / HTTP/1.1" 200 29282
+INFO 2020-06-15 16:12:16,507 basehttp 62299 "POST /accounts/contacting HTTP/1.1" 302 0
+INFO 2020-06-15 16:12:16,549 basehttp 62299 "GET / HTTP/1.1" 200 29576
+INFO 2020-06-15 16:14:36,309 autoreload 62299 /Users/aleksandramialiashka/Documents/Programming/MaximProject/accounts/views.py changed, reloading.
+INFO 2020-06-15 16:14:37,965 autoreload 62378 Watching for file changes with StatReloader
+INFO 2020-06-15 16:14:45,219 autoreload 62378 /Users/aleksandramialiashka/Documents/Programming/MaximProject/accounts/views.py changed, reloading.
+INFO 2020-06-15 16:14:45,752 autoreload 62384 Watching for file changes with StatReloader
+INFO 2020-06-15 16:14:47,468 basehttp 62384 "GET / HTTP/1.1" 200 29282
+INFO 2020-06-15 16:15:00,174 basehttp 62384 "POST /accounts/contacting HTTP/1.1" 302 0
+INFO 2020-06-15 16:15:00,189 basehttp 62384 "GET /accounts/login/?next=/accounts/contacting HTTP/1.1" 200 1258
+INFO 2020-06-15 16:55:21,809 autoreload 62384 /Users/aleksandramialiashka/Documents/Programming/MaximProject/Warehouse/settings.py changed, reloading.
+INFO 2020-06-15 16:55:22,808 autoreload 63167 Watching for file changes with StatReloader
