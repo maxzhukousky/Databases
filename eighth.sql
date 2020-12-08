@@ -1,4 +1,4 @@
-SELECT 'second_name' as table_name,
+SELECT 'name1' as table_name,
 COUNT(CASE WHEN LENGTH(name)=SMinMaxAvg.min THEN LENGTH(name) ELSE NULL END) as 'Мин.длина',
 COUNT(CASE WHEN LENGTH(name)=SMinMaxAvg.max THEN LENGTH(name) ELSE NULL END) as 'Макс.длина',
 COUNT(CASE WHEN LENGTH(name)=SMinMaxAvg.middle THEN LENGTH(name) ELSE NULL END) as 'Ср.длина'
@@ -9,7 +9,7 @@ FROM StudentsRB.name1,
 FROM StudentsRB.name1) as SMinMaxAvg
 UNION ALL
 
-SELECT 'first_name' as table_name,
+SELECT 'name2' as table_name,
 COUNT(CASE WHEN LENGTH(name)=FMinMaxAvg.min THEN LENGTH(name) ELSE NULL END) as 'Мин.длина',
 COUNT(CASE WHEN LENGTH(name)=FMinMaxAvg.max THEN LENGTH(name) ELSE NULL END) as 'Макс.длина',
 COUNT(CASE WHEN LENGTH(name)=FMinMaxAvg.middle THEN LENGTH(name) ELSE NULL END) as 'Ср.длина'
