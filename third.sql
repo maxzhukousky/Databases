@@ -3,8 +3,7 @@ CREATE TABLE IF NOT EXISTS StudentsRB.university_temp(
   university VARCHAR(120) NULL,
   PRIMARY KEY(id));
 
-INSERT INTO StudentsRB.university_temp(university) VALUES
-﻿('Барановичский государственный университет'),
+INSERT INTO StudentsRB.university_temp(university) VALUES ('Барановичский государственный университет'),
 ('Брестский государственный технический университет'),
 ('Брестсuniverкий государственный университет имени А.С.Пушкина'),
 ('Полесский государственный университет'),
