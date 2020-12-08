@@ -13,7 +13,7 @@ SELECT 'name2' as table_name,
 COUNT(CASE WHEN LENGTH(name)=FMinMaxAvg.min THEN LENGTH(name) ELSE NULL END) as 'Мин.длина',
 COUNT(CASE WHEN LENGTH(name)=FMinMaxAvg.max THEN LENGTH(name) ELSE NULL END) as 'Макс.длина',
 COUNT(CASE WHEN LENGTH(name)=FMinMaxAvg.middle THEN LENGTH(name) ELSE NULL END) as 'Ср.длина'
-FROM StudentsRB,
+FROM StudentsRB.name2,
 (SELECT MIN(LENGTH(name)) AS min,
 	    MAX(LENGTH(name)) AS max,
         SUM(LENGTH(name)) DIV COUNT(LENGTH(name)) as middle
