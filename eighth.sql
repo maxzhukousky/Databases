@@ -17,7 +17,7 @@ FROM StudentsRB.name2,
 (SELECT MIN(LENGTH(name)) AS min,
 	    MAX(LENGTH(name)) AS max,
         SUM(LENGTH(name)) DIV COUNT(LENGTH(name)) as middle
-FROM StudentsRB) as FMinMaxAvg
+FROM StudentsRB.name2) as FMinMaxAvg
 UNION ALL
 
 SELECT 'university' as table_name,
