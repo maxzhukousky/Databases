@@ -4,13 +4,13 @@ UNION ALL
 SELECT 'first_name' AS table_name, MIN(LENGTH(name)) min, MAX(LENGTH(name)) max, AVG(LENGTH(name)) middle
 FROM StudentsRB.name2
 UNION ALL
-SELECT 'country' AS table_name, MIN(LENGTH(name)) min, MAX(LENGTH(name)) max, AVG(LENGTH(country)) middle
+SELECT 'country' AS table_name, MIN(LENGTH(name)) min, MAX(LENGTH(name)) max, AVG(LENGTH(name)) middle
 FROM StudentsRB.country
 UNION ALL
-SELECT 'city' AS table_name, MIN(LENGTH(name)) min, MAX(LENGTH(name)) max, AVG(LENGTH(city_name)) middle
+SELECT 'city' AS table_name, MIN(LENGTH(name)) min, MAX(LENGTH(name)) max, AVG(LENGTH(name)) middle
 FROM StudentsRB.city
 UNION ALL
-SELECT 'region' AS table_name, MIN(LENGTH(name)) min, MAX(LENGTH(name)) max, AVG(LENGTH(region)) middle
+SELECT 'region' AS table_name, MIN(LENGTH(name)) min, MAX(LENGTH(name)) max, AVG(LENGTH(name)) middle
 FROM StudentsRB.region
 UNION ALL
 SELECT 'university' AS table_name, MIN(LENGTH(name)) min, MAX(LENGTH(name)) max, AVG(LENGTH(name)) middle
