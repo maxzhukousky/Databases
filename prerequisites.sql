@@ -1,0 +1,13 @@
+SET SQL_SAFE_UPDATES = 0;
+DELETE FROM StudentsRB.name1 WHERE id > -1;
+DELETE FROM StudentsRB.name2 WHERE id > -1;
+DELETE FROM StudentsRB.university WHERE id > -1;
+DELETE FROM StudentsRB.country WHERE id > -1;
+DELETE FROM StudentsRB.region WHERE id > -1;
+DELETE FROM StudentsRB.city WHERE id > -1;
+ALTER TABLE StudentsRB.name1 AUTO_INCREMENT = 1;
+ALTER TABLE StudentsRB.name2 AUTO_INCREMENT = 1;
+ALTER TABLE StudentsRB.university AUTO_INCREMENT = 1;
+ALTER TABLE StudentsRB.region AUTO_INCREMENT = 1;
+ALTER TABLE StudentsRB.city AUTO_INCREMENT = 1;
+ALTER TABLE StudentsRB.country AUTO_INCREMENT = 1;
