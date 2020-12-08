@@ -33,7 +33,7 @@ UNION ALL
 
 SELECT 'country' as table_name,
 COUNT(CASE WHEN LENGTH(name)=CMinMaxAvg.min THEN LENGTH(name) ELSE NULL END) as 'Мин.длина',
-COUNT(CASE WHEN LENGTH(name)=CMinMaxAvg.max THEN LENGTH(country) ELSE NULL END) as 'Макс.длина',
+COUNT(CASE WHEN LENGTH(name)=CMinMaxAvg.max THEN LENGTH(name) ELSE NULL END) as 'Макс.длина',
 COUNT(CASE WHEN LENGTH(name)=CMinMaxAvg.middle THEN LENGTH(name) ELSE NULL END) as 'Ср.длина'
 FROM StudentsRB.country,
 (SELECT MIN(LENGTH(name)) AS min,
