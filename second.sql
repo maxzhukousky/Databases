@@ -15,7 +15,7 @@ CREATE TABLE IF NOT EXISTS StudentsRB.region_temp(
   id MEDIUMINT UNSIGNED NOT NULL, region VARCHAR(40) NULL, id_fk MEDIUMINT UNSIGNED NULL,
   PRIMARY KEY(id));
 
-INSERT INTO StudentsRB.region_temp(id,id_fk,region) VALUES ﻿(0,0,'Москва и Московская область'), (1,0,'Санкт-Петербург и область');
+INSERT INTO StudentsRB.region_temp(id,id_fk,region) VALUES ﻿(0,0,'Москва и Московская область');
 
 INSERT INTO StudentsRB.region(name)
 
